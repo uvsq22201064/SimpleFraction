@@ -6,6 +6,7 @@ public class Fraction{
         this.numerateur = numerateur;
         this.denominateur = denominateur;
     }
+    
 
     Fraction(int numerateur){
         this.numerateur = numerateur;
