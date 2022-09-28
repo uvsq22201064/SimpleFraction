@@ -20,4 +20,12 @@ public class Fraction{
     public String toString(){
         return "Numérateur : "+this.numerateur+" Dénominateur :"+this.denominateur;
     }
+
+    public int getNumerateur(){
+        return this.numerateur;
+    }
+
+    public int getDenominateur(){
+        return this.denominateur;
+    }
 }
