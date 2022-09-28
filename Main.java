@@ -1,4 +1,6 @@
 public class Main{
+    private static final Fraction ZERO = new Fraction(0,1);
+    private static final Fraction UN = new Fraction(1,1);
     public static void main(String[] args) {
         Fraction f1 = new Fraction();
         assert f1.toString().equals("Numérateur : 1 Dénominateur : 1");
