@@ -1,8 +1,23 @@
 public class Fraction{
     private int numerateur;
     private int denominateur;
+    
+    Fraction(int numerateur, int denominateur){
+        this.numerateur = numerateur;
+        this.denominateur = denominateur;
+    }
+
+    Fraction(int numerateur){
+        this.numerateur = numerateur;
+        this.denominateur = 1;
+    }
+
+    Fraction(){
+        this.numerateur = 0;
+        this.denominateur = 1;
+    }
 
     public String toString(){
-        return "Je suis une Fraction.";
+        return "Numérateur : "+this.numerateur+" Dénominateur :"+this.denominateur;
     }
 }
