@@ -29,4 +29,8 @@ public class Fraction{
     public int getDenominateur(){
         return this.denominateur;
     }
+
+    public double doubleValue(){
+        return this.numerateur/this.denominateur;
+    }
 }
