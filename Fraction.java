@@ -1,4 +1,4 @@
-public class Fraction{
+public class Fraction extends Number{
     private int numerateur;
     private int denominateur;
     
@@ -31,7 +31,19 @@ public class Fraction{
     }
 
     public double doubleValue(){
-        return this.numerateur/this.denominateur;
+        return (double) this.numerateur/ (double) this.denominateur;
+    }
+
+    public int intValue(){
+        return (int) (this.numerateur/this.denominateur);
+    }
+
+    public float floatValue(){
+        return (float) (this.numerateur/this.denominateur);
+    }
+
+    public long longValue(){
+        return (long) (this.numerateur/this.denominateur);
     }
 
     public Fraction add(Fraction f){
