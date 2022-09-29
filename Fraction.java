@@ -1,4 +1,4 @@
-public class Fraction implements Comparable<Fraction>{
+public class Fraction{
     private int numerateur;
     private int denominateur;
     
