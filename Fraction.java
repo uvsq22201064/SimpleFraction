@@ -1,4 +1,4 @@
-public class Fraction{
+public class Fraction implements Comparable<Fraction>{
     private int numerateur;
     private int denominateur;
     
@@ -48,6 +48,10 @@ public class Fraction{
             return this.getNumerateur()*o.getDenominateur() == this.getDenominateur()*o.getNumerateur();
         }
         return false;
+    }
+
+    public int compareTo(Fraction f) {
+        return this.numerateur*f.getDenominateur() - this.denominateur*f.getNumerateur();
     }
     
 }
