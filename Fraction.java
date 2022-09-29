@@ -37,4 +37,17 @@ public class Fraction{
     public Fraction add(Fraction f){
         return new Fraction(this.numerateur*f.getDenominateur() + this.denominateur*f.getNumerateur(), this.denominateur * f.getDenominateur());
     }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof Fraction) {
+            Fraction o = (Fraction) obj;
+            return this.getNumerateur()*o.getDenominateur() == this.getDenominateur()*o.getNumerateur();
+        }
+        return false;
+    }
+    
 }
