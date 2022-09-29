@@ -33,4 +33,8 @@ public class Fraction{
     public double doubleValue(){
         return this.numerateur/this.denominateur;
     }
+
+    public Fraction add(Fraction f){
+        return new Fraction(this.numerateur*f.getDenominateur() + this.denominateur*f.getNumerateur(), this.denominateur * f.getDenominateur());
+    }
 }
